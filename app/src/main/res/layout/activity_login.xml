@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.LoginActivity"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container"
+        android:paddingVertical="24dp"
+        android:paddingHorizontal="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/animation">
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_marginTop="24dp"
+            android:contentDescription="Description"
+            android:src="@drawable/pilkada"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp"
+            android:text="Login"
+            android:textAppearance="@style/TextView.PoppinsBoldBlack"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivLogo" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/message_desc_app"
+            android:textAppearance="@style/TextView.PoppinsRegularGrey"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/labelNip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="NIP"
+            android:textAppearance="@style/TextView.PoppinsRegularBlack"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView2"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            tools:ignore="TextContrastCheck" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/containerNip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:hintEnabled="false"
+            app:layout_constraintEnd_toEndOf="@+id/labelNip"
+            app:layout_constraintStart_toStartOf="@+id/labelNip"
+            app:layout_constraintTop_toBottomOf="@+id/labelNip">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editNip"
+                style="@style/EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukan NIP"
+                android:inputType="number"
+                android:padding="16dp"
+                android:textAppearance="@style/TextView.PoppinsRegularBlack"
+                android:textSize="14sp"
+                tools:ignore="TextContrastCheck,VisualLintTextFieldSize,DuplicateSpeakableTextCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/labelPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Password"
+            android:textAppearance="@style/TextView.PoppinsRegularBlack"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/containerNip"
+            app:layout_constraintStart_toStartOf="@+id/containerNip"
+            app:layout_constraintTop_toBottomOf="@+id/containerNip"
+            tools:ignore="TextContrastCheck" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/containerPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:endIconMode="password_toggle"
+            app:hintEnabled="false"
+            app:layout_constraintEnd_toEndOf="@+id/containerNip"
+            app:layout_constraintStart_toStartOf="@+id/containerNip"
+            app:layout_constraintTop_toBottomOf="@+id/labelPassword">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editPassword"
+                style="@style/EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukan password"
+                android:inputType="textPassword"
+                android:padding="16dp"
+                android:textAppearance="@style/TextView.PoppinsRegularBlack"
+                android:textSize="14sp"
+                tools:ignore="TextContrastCheck,VisualLintTextFieldSize,DuplicateSpeakableTextCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkBoxRememberMe"
+            style="@style/TextView.PoppinsRegularBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingStart="8dp"
+            android:text="Ingat saya"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/containerPassword"
+            app:layout_constraintTop_toBottomOf="@+id/containerPassword"
+            tools:ignore="RtlSymmetry" />
+
+        <Button
+            android:id="@+id/buttonLogin"
+            style="@style/Button.Yellow"
+            android:enabled="false"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Masuk"
+            app:layout_constraintEnd_toEndOf="@+id/containerPassword"
+            app:layout_constraintStart_toStartOf="@+id/containerPassword"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxRememberMe"
+            tools:ignore="VisualLintButtonSize,TextContrastCheck,TextContrastCheck,DuplicateSpeakableTextCheck" />
+
+        <TextView
+            android:id="@+id/textVersionApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:textAppearance="@style/TextView.PoppinsRegularGrey"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonLogin"
+            tools:ignore="TextContrastCheck"
+            tools:text="v1.0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

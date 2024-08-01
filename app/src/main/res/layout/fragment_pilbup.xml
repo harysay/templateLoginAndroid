@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_background"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Baris Pertama: Foto, Nama, Jabatan, dan Tombol Pengaturan -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_background"
+            android:gravity="center_vertical">
+
+            <RelativeLayout
+                android:layout_width="357dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+                <!-- Foto Pengguna -->
+                <ImageView
+                    android:id="@+id/imageUser"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/circle_background"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_user" />
+
+                <!-- Nama dan Jabatan Pengguna -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/imageUser"
+                    android:orientation="vertical">
+
+                    <!-- Nama Pengguna -->
+                    <TextView
+                        android:id="@+id/textUserName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nama Pengguna"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <!-- Jabatan Pengguna -->
+                    <TextView
+                        android:id="@+id/textUserPosition"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Jabatan Pengguna"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <!-- Tombol Pengaturan -->
+                <ImageButton
+                    android:id="@+id/btnSettings"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_settings" />
+            </RelativeLayout>
+        </TableRow>
+
+        <!-- Baris Kedua: Detail Jabatan dan Lokasi -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_background">
+
+            <!-- Kolom 1 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!-- TextView 1 (Label) -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TPS"
+                    android:textStyle="bold"
+                    android:paddingStart="8dp"
+                    android:paddingTop="8dp" />
+                <!-- TextView 2 (Value) -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Value TPS 001"
+                    android:paddingStart="8dp"
+                    android:layout_marginBottom="8dp" />
+            </LinearLayout>
+
+            <!-- Kolom 2 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!-- TextView 1 (Label) -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kode TPS"
+                    android:textStyle="bold"
+                    android:paddingStart="8dp"
+                    android:paddingTop="8dp" />
+                <!-- TextView 2 (Value) -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Value 34"
+                    android:paddingStart="8dp"
+                    android:layout_marginBottom="8dp" />
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_background">
+            <!-- Kolom 1 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <!-- TextView 1 (Label) -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kelurahan"
+                    android:textStyle="bold"
+                    android:paddingStart="8dp"
+                    android:paddingTop="8dp" />
+                <!-- TextView 2 (Value) -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Value Pejagoan"
+                    android:paddingStart="8dp"
+                    android:layout_marginBottom="8dp" />
+
+            </LinearLayout>
+
+            <!-- Kolom 2 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <!-- TextView 1 (Label) -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kecamatan"
+                    android:textStyle="bold"
+                    android:paddingStart="8dp"
+                    android:paddingTop="8dp" />
+                <!-- TextView 2 (Value) -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Value Pejagoan"
+                    android:paddingStart="8dp"
+                    android:layout_marginBottom="8dp" />
+            </LinearLayout>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <!-- Menggunakan LinearLayout untuk tata letak kolom -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:orientation="horizontal">
+
+                <!-- Kolom 1: Label dengan latar belakang abu-abu -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="4dp"
+                    android:gravity="center">
+
+                    <!-- Label dengan latar belakang abu-abu dan teks bold -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_gray_background"
+                        android:padding="8dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="100"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <!-- Value -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jumlah DPT"
+                        android:padding="2dp" />
+
+                </LinearLayout>
+
+                <!-- Kolom 2: Label dengan latar belakang kuning -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="4dp"
+                    android:gravity="center">
+
+                    <!-- Label dengan latar belakang kuning dan teks bold -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_yellow_background"
+                        android:padding="8dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="100"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <!-- Value -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Suara Tidak Sah"
+                        android:padding="2dp" />
+                </LinearLayout>
+
+                <!-- Kolom 3: Label dengan latar belakang hijau -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="4dp"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_green_background"
+                        android:padding="8dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="100"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <!-- Value -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Suara Sah"
+                        android:padding="2dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+
+</FrameLayout>

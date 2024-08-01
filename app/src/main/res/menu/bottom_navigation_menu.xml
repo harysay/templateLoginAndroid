@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_pilgub"
+        android:title="Pilgub"
+        android:icon="@mipmap/gubernur" />
+    <item
+        android:id="@+id/menu_pilbup"
+        android:title="Pilbup"
+        android:icon="@mipmap/bupati" />
+</menu>

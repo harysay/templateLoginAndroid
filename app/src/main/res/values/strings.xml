@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Realcount</string>
+    <string name="account_not_found">Akun tidak ditemukan pastikan NIP \ndan password anda benar</string>
+    <string name="not_connected_to_the_internet">Pastikan koneksi internet anda terhubung.</string>
+    <string name="wait">Mohon tunggu..</string>
+    <string name="message_auto_date_time">Zona waktu, tanggal dan waktu otomatis anda tidak aktif.</string>
+    <string name="warning">Peringatan</string>
+    <string name="next_time">Lain Kali</string>
+    <string name="created_by">Dibuat oleh\nDiskominfo Kabupaten Kebumen</string>
+    <string name="message_desc_app">Silahkan masuk untuk melanjutkan</string>
+    <string name="title_update">Pembaruan Tersedia</string>
+    <string name="message_update">Versi baru aplikasi tersedia. Apakah anda ingin memperbarui sekarang?</string>
+    <string name="setting">Pengaturan</string>
+    <string name="update">Perbarui</string>
+    <string name="ok">OK</string>
+    <string name="try_again">Coba Lagi</string>
+    <string name="enable_location_service">Aktifkan terlebih dahulu layanan lokasi pada smartphone anda.</string>
+    <string name="not_face_record">Anda tidak perlu melakukan rekam wajah.</string>
+    <string name="third_parties"><![CDATA[Anda terindikasi menggunakan aplikasi pihak ketiga. Harap matikan <b>Opsi Pengembang</b> terlebih dahulu.]]></string>
+    <string name="privacy_policy">Kebijakan Privasi</string>
+    <string name="agree">Setuju</string>
+    <string name="back">Kembali</string>
+    <string name="desc_privacy_policy"><![CDATA[Selamat datang di layanan <b>Realcount Pemkab Kebumen</b> yang diselenggarakan oleh Pemerintah Kabupaten Kebumen.<br><br>Kebijakan privasi ini menjelaskan bagaimana kami mengumpulkan, menggunakan, dan melindungi informasi pribadi anda ketika anda menggunakan layanan kami. Kami berkomitmen untuk menjaga kerahasiaan dan keamanan informasi yang anda berikan kepada kami.<br><br>Mohon baca Kebijakan Privasi ini secara seksama untuk memastikan anda memahami praktik pemrosesan data kami untuk layanan yang disediakan oleh kami.<br><br>Dengan menggunakan layanan kami, anda setuju dengan pengumpulan dan penggunaan data sesuai dengan kebijakan ini.<br><br>
+<b>1. Jenis Informasi yang Kami Kumpulkan</b>
+<br>a. Identitas Pribadi
+<br>Kami dapat mengumpulkan informasi seperti NIP (Nomor Induk Pegawai), nama, unit kerja, jabatan, foto, alamat email, dan informasi kontak lainnya ketika anda berinteraksi dengan layanan kami.
+<br>b. Data Transaksi
+<br>Jika Anda melakukan transaksi atau input data terkait kinerja melalui layanan kami, kami dapat mengumpulkan informasi yang terkait dengan transaksi tersebut, seperti entri data pemungutan suara dan informasi lain yang diperlukan.
+<br>c. Informasi Perangkat dan Pemakaian
+<br>Kami dapat mengumpulkan informasi tentang perangkat yang anda gunakan untuk mengakses aplikasi kami, termasuk informasi perangkat keras dan perangkat lunak, alamat IP, jenis perangkat, sistem operasi, lokasi, serta informasi tentang penggunaan anda dalam aplikasi.
+<br>d. Cookies dan Teknologi Terkait
+<br>Kami menggunakan teknologi seperti cookies, pixel tags, dan teknologi pelacakan lainnya untuk mengumpulkan informasi tentang aktivitas anda dalam aplikasi. Teknologi ini membantu kami memahami bagaimana anda berinteraksi dengan layanan kami.
+<br><br><b>2. Penggunaan Informasi</b>
+<br>Kami menggunakan informasi yang kami kumpulkan untuk:
+<br>a.	Mengelola Data Pemilu Daerah: Membantu administrasi penghitungan cepat hasil pemulu melalui aplikasi Realcount Pemkab Kebumen.
+<br>b.	Analisis dan Peningkatan: Menganalisis penggunaan aplikasi, memahami kebutuhan pengguna, dan meningkatkan pengalaman pengguna.
+<br>c.	Pemberitahuan dan Komunikasi: Memberikan informasi terkait layanan, pengumuman, atau pembaruan melalui pemberitahuan dalam aplikasi.
+<br>d.	Pematuhan Hukum: Mematuhi kewajiban hukum, regulasi, atau permintaan resmi dari otoritas yang berwenang.
+
+<br><br><b>3.	Berbagi Informasi</b>
+<br>Kami tidak akan membagikan informasi pribadi anda kepada pihak lain kecuali seperti yang dijelaskan dalam kebijakan ini. Kami dapat membagikan informasi dengan Otoritas yang Berwenang. Kami dapat membagikan informasi jika diwajibkan oleh hukum atau untuk mematuhi permintaan resmi dari otoritas yang berwenang.
+<br><br><b>4. Keamanan Informasi</b>
+<br>Kami mengambil langkah-langkah untuk melindungi informasi pribadi anda dengan menerapkan kebijakan keamanan dan pengendalian akses yang tepat.
+<br><br><b>5.	Hak Privasi Anda</b>
+<br>Anda memiliki hak untuk mengakses, memperbarui, atau menghapus informasi pribadi anda dalam aplikasi kami. Untuk permintaan ini atau pertanyaan lain terkait privasi, silakan menghubungi kami melalui email kominfo@kebumenkab.go.id
+<br><br><b>6.	Perubahan Kebijakan Privasi</b>
+<br>Kami dapat mengubah kebijakan privasi ini sesuai kebutuhan. Perubahan akan efektif segera setelah diperbarui dalam aplikasi.
+<br><br><b>7.	Kontak</b>
+<br>Jika Anda memiliki pertanyaan atau kekhawatiran terkait kebijakan privasi atau penggunaan informasi anda, silakan hubungi kami melalui email kominfo@kebumenkab.go.id
+<br><br>Terima kasih telah menggunakan aplikasi <b>Realcount Pemkab Kebumen</b>.
+<br><br>Kebijakan privasi ini diimplementasikan untuk melindungi privasi anda dan memberikan pengalaman yang aman dalam menggunakan layanan kami.]]></string>
+</resources>
